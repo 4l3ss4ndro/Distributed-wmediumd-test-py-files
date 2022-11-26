@@ -13,8 +13,8 @@ def topology(args):
     kwargs = dict()
     
     if mobility:
-    	sta1 = net.addStation('sta1', ip='10.0.0.1/24', **kwargs, encrypt='wpa3')
-    	sta2 = net.addStation('sta2', ip='10.0.0.2/24', **kwargs, encrypt='wpa3')
+    	sta1 = net.addStation('sta1', ip='10.0.0.1/24', **kwargs, passwd='123456789a', encrypt='wpa3')
+    	sta2 = net.addStation('sta2', ip='10.0.0.2/24', **kwargs, passwd='123456789a', encrypt='wpa3')
 
     else:
     	sta1 = net.addStation('sta1', ip='10.0.0.1/24', position='10,10,0', **kwargs, passwd='123456789a', encrypt='wpa3')
